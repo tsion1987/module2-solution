@@ -1,94 +1,85 @@
 * {
-  box-sizing: border-box;
-  
-}
-
-h1{
-font-family: "Times New Roman", Times, serif;
-text-align: center;
-margin-bottom: 15px
-font-size:50;
-}
-
-#title1{
-	border: 1px solid black;
-	position: relative;
-	background:red;
-	float: right;
-	clear: left;
-	margin: 0;
-	padding: 0;
-	margin-bottom: 10px
-	font-size:32;
-	
-
-
-}
-#title2{
-	border: 1px solid black;
-	position: relative;
-	background:blue;
-	float: right;
-    clear: both;
-    margin:0;	
-    padding: 0;
-	font-size:32;
-
-}
-#title3{
-	border: 1px solid black;
-	position: relative;
-	background:green;
-	float: right;
-	clear: both;
-	margin: 0;
-	padding: 0;
-	font-size:32;
-
-}
-.article1,.article2,.article3{
-      background-color: gray;
-      border: 1px solid black;
-	  width: 340px;
-	  height: 220px;
-	  margin-right: 5px;
-	  margin-left: 5px;
-	  margin-bottom: 15px;
-	  float: left;
-	  
-	 	
-	
+	  box-sizing: border-box;
 	}
-div{
+	
+	h1 {
+		
+		font-family: Georgia serif;
+		text-align: center;
+	        font-size: 40px;
+		color: blue;
+		margin-bottom: 30px;
+	}
+	
+	p {
+		padding: 15px 5px 0px 5px;
+	        position: relative;
+		font-family: Georgia sans-serif;
+		font-size: 16px;
+		
+	}
+	
+	.article { 
+		background-color: gray;
+	   	border: 2px solid black;
+	  	margin-top: 20px; 
+	   	margin-right: 20px; 
+	   	padding: 6px;
+	   	text-align: justify;
+	   	position: relative;
+	 }
+	
+	span {
+		font-size: 20px;
+		width: 150px;
+		border: 1px solid black;
+		font-weight: bold;
+		text-align: center;
+		float: right; top :0; right: 0; margin: 0;
+		position: absolute;
+	}
+	#title1 {
+		background-color: purple;
+		color: black;
+	}
+	#title2 {
+		background-color: brown;
+		color: black;
+	}
+	#title3 {
+		background-color: blue;
+		color:black;
+	}
+	}
+	
+	.row {
+		width: 100%;
+	}
+	
+	
+	@media (min-width: 992px) {
 	 
-
-}
-
-
-.row {
-  width: 100%;
-}
-/********** Desktop **********/
-@media (min-width: 992px) {
-    
-		.article1 .article2 .article3{
-		width:30%;
+	  .col-lg-4 {
+	    width: 33.33%;
+	    float: left;
+		}
 	}
-}
-
-/********** Tablet **********/
-    @media (min-width: 768px) and (max-width: 991px)  {
-    		.article1 .article2 .article3 {
-		width:45%;
+	@media (min-width: 768px) and (max-width: 991px) {
+	 
+	  .col-md-6 {
+	    width: 50%;
+	    float: left;
+	  }
+	  .col-md-12 {
+	    width: 100%;
+	    float: left;
+	  }
 	}
-		.article3{
-       width:90%;
-
-}	}
- 
-/********** Mobile **********/
-@media (max-width:  767px) {
-       
-		.article1 .article2 .article3{
-		width:90%;
+	@media (max-width: 767px)  {
+	  
+	  .col-sm-12 {
+	  	float: left;
+	    width: 100%;
+	  }
 	}
+
